@@ -18,7 +18,8 @@ public class GmailSignInTest {
 		WebDriver driver = new ChromeDriver(); 	// You can use any other web browser.
 
 		driver.get("https://www.google.com");
-		driver.findElement(By.id("gb_70")).click();
+		//driver.findElement(By.id("gb_70")).click();
+		driver.findElement(By.xpath("//*[@id=\"gb_70\"]"));
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
