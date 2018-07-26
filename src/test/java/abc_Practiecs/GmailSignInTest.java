@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GmailSignInTest {
+	
 	private static final WebElement signout = null;
 
 	public GmailSignInTest() {
@@ -31,21 +32,23 @@ public class GmailSignInTest {
 		driver.findElement(By.id("identifierId")).sendKeys("phmosharaf@gmail.com");
 		driver.findElement(By.id("identifierNext")).click();
 
-		driver.findElement(By.xpath("//input[@aria-label='Enter your password' and @name='password']")).sendKeys("password656");
+		driver.findElement(By.xpath("//input[@aria-label='Enter your password' and @name='password']")).sendKeys("@R08045307Nm");
 
-		Thread.sleep(200);
+		Thread.sleep(20);
 
 		driver.findElement(By.id("passwordNext")).click();
+		
+		driver.findElement(By.className("gb_8a gbii")).click();
 
-		WebElement logout=driver.findElement(By.cssSelector("span.gb_4.gbii"));
-		logout.click();
+		//WebElement logout=driver.findElement(By.cssSelector("#gb_71"));
+		//logout.click();
 
 		driver.findElement(By.id("gb_71")).click();
 		signout.click();
 
 		// assert.assertEquals(true, driver.getPageSource.contains("Google"));
 
-		Thread.sleep(1200);
+		//Thread.sleep(1200);
 
 		Thread.sleep(2000);
 
