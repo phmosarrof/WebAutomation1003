@@ -18,16 +18,23 @@ public class PracticesMultiElement {
 		WebDriver driver = new ChromeDriver(); 
 
 		// Launch the ToolsQA WebSite
+		
 		driver.get("http://toolsqa.wpengine.com/Automation-practice-form/");
 		
 		driver.manage().window().maximize();
 
-		// Type Name in the FirstName text box      
-		driver.findElement(By.name("firstname")).sendKeys("Lakshay"); 
+		// Type Name in the FirstName text box    
+		
+		driver.findElement(By.name("firstname")).sendKeys("Mosarrof"); 
+		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		Thread.sleep(2000);
+		
 		//Type LastName in the LastName text box
-		driver.findElement(By.name("lastname")).sendKeys("Sharma");
+		
+		driver.findElement(By.name("lastname")).sendKeys("Hossain");
+		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Thread.sleep(1000);
 		// Click on the Submit button

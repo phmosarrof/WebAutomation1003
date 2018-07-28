@@ -32,7 +32,7 @@ public class GmailSignInTest {
 		driver.findElement(By.id("identifierId")).sendKeys("phmosharaf@gmail.com");
 		driver.findElement(By.id("identifierNext")).click();
 
-		driver.findElement(By.xpath("//input[@aria-label='Enter your password' and @name='password']")).sendKeys("@R08045307Nm");
+		driver.findElement(By.xpath("//input[@aria-label='Enter your password' and @name='password']")).sendKeys("0804dksfois30m");
 
 		Thread.sleep(20);
 
